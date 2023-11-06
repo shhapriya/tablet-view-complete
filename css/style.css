@@ -1,0 +1,224 @@
+
+ nav {
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        text-align: right; 
+        font-size: 16px;
+       }
+       nav a {
+       text-decoration: none; 
+       color: black; 
+       margin: 0 15px; 
+       border: 1px solid #333; 
+       padding: 10px 15px;
+       }
+       nav li {
+       display: inline-block; 
+       }
+   
+       nav a.active {
+        font-weight: bold;
+        color: yellow; 
+        text-decoration: none; 
+    }
+
+    body {
+        display: grid;
+        background-color: lavender;
+        color: black;
+        font-family: 'Serif';
+        }
+
+
+nav a:hover, nav a:focus {
+    text-decoration: underline; 
+    color: rgb(255, 202, 127); */ */
+
+.thumbnail {
+ display: grid;
+
+ .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-gap: 10px;
+  }
+      }   
+ } 
+
+
+@media (prefers-reduced-motion: reduce) {
+    img[src$=".gif"] {
+        animation: none
+  }
+}
+h1 {
+	color: #054c63;
+    font-family: Fantasy;
+    text-align: center; 
+    font-size: 50px; 
+}
+
+h2 {
+font-size: medium; 
+font-family: Georgia;
+color: black;
+}
+
+h3 {
+    font-size: medium; 
+    font-family: Georgia;
+    color: rgb(221, 217, 100);
+    }
+
+#skip {
+     position: absolute;   
+     top: -30px;
+     left: -30px; 
+     font-family: Fantasy; 
+}
+
+
+p {
+line-height: 180%; 
+}
+
+img {
+border-style: dashed; 
+border-color: green;
+padding: 10px;
+margin: 20px; 
+border-top-right-radius: 30px; 
+}
+
+.recipes img {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.recipes img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease; 
+}
+.recipes hover img {
+    transform: scale(1.2); 
+}
+
+li {
+display: inline-block;
+margin-left: 50px; 
+}
+#skip:focus {
+   left: 600px; 
+}
+
+.gallery {
+display: grid; 
+grid-gap: 20px; 
+grid-template-columns: 2fr 2fr 2fr;
+text-align: center;
+}
+
+@keyframes fade-in {
+    0% {
+    opacity: 0;
+    }
+    100% {
+    opacity: 0.5;
+    }
+    }
+
+
+
+    @media (min-width:768px) {
+
+    .Travel {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Two columns with equal width */
+        grid-gap: 10px; /* Gap between images */
+          }
+
+        .Pets {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr; /* Two columns with equal width */
+        grid-gap: 20px; /* Gap between images */
+              }
+          
+    .travel-pics img {
+     width: 100%; /* Each image takes up 100% of the grid cell */
+     height: auto; /* Maintain aspect ratio */
+          }
+
+        .pet-pics img {
+         display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr; 
+        grid-gap: 20px;
+        width: 100%;
+        max-height: 70%;
+        } 
+        .recipes-pics img {
+         display: grid;
+           grid-template-columns: 1fr 1fr 1fr 1fr; 
+           width: 100%;
+           margin: auto;
+           } 
+
+    .scroll-button {
+     display: block;
+     margin: 20px;
+     padding: 20px;
+     background-color: #8C92AC;
+     color: white;
+     border: none;
+     border-radius: 5px;
+     font-size: large;
+     font-weight: normal; 
+    }
+
+    .button-container {
+    display: flex;
+    justify-content: space-evenly;
+    }
+
+    /* add lightbox */
+      .lightbox {
+        display: flex;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7);
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .lightbox-content {
+        max-width: 80%;
+        max-height: 80%;
+        position: relative;
+        display: flex;
+      }
+
+      .lightbox-content img {
+        max-width: 80%;
+        max-height: 80%;
+        border: 4px solid black;
+        border-radius: 20 px; 
+      }
+      
+      .close-button {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 30px;
+        color: #fff;
+        cursor: pointer;
+      }
+      
+
+    }
+
